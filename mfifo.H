@@ -25,6 +25,8 @@ public:
     unsigned int GetItems();
     void Clear() ;
 private:
+    MFifo (const MFifo &original);
+    MFifo & operator = (const MFifo & rhs);
     unsigned int items;
     Item* begin;
     Item* end;
